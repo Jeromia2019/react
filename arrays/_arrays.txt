@@ -1,6 +1,8 @@
-.pop()                  [element]   Supprime le dernier élément d'un tableau et retourne cet [élément].[undefined] si tableau vide.
-.push(val)              [tabSize]   Ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
-.reduce(function)       [value]     Applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la gauche vers la droite) de sorte à réduire le tableau en une seule valeur. (function(acc, val){})
-.reduceRight(function)  [value]     Applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la droite vers la gauche) de sorte à réduire le tableau en une seule valeur. (function(acc, val){})
-.reverse(tab)           [thisTab]   Inverse les éléments d'un tableau (premier au dernier et vice-versa).
-.shift()                [element]   Retire le premier élément d'un tableau et renvoye cet élément en modifiant la longeur du tableau.
+.pop()                          [element]   Supprime le dernier élément d'un tableau et retourne cet [élément].[undefined] si tableau vide.
+.push(val)                      [tabSize]   Ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle taille du tableau.
+.reduce(function)               [value]     Applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la gauche vers la droite) de sorte à réduire le tableau en une seule valeur. (function(acc, val){})
+.reduceRight(function)          [value]     Applique une fonction sur un accumulateur et chaque valeur d'un tableau (de la droite vers la gauche) de sorte à réduire le tableau en une seule valeur. (function(acc, val){})
+.reverse(tab)                   [thisTab]   Inverse les éléments d'un tableau (premier au dernier et vice-versa).
+.shift()                        [element]   Retire le premier élément d'un tableau et renvoye cet élément en modifiant la longeur du tableau.
+.slice(indexStart,{indexEnd})   [element]   Découpe un tableau sur base d' un index de début (jusqu'à la fin) ou/et d'un index de fin {indexEnd}.
+.some(function)                 [boolean]   Teste si au moins un élément du tableau répond au conditions de la fonction fournie.

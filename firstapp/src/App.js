@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome, { Goodbye } from './components/welcome/welcome';
 
 function App() {
   return (
@@ -7,17 +8,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>♥ Hello Mia ♥</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Welcome firstname="Mia" lastname="(° ͜ʖ͡°) ♥" />
+        <Goodbye firstname="Jérôme" lastname="(-_-)╭∩╮" />
       </header>
     </div>
   );

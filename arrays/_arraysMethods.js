@@ -11,4 +11,6 @@ console.log("[value]    .reduceRight((acc, val) => acc + val))  >", tab.reduceRi
 console.log("[thisTab]  .reverse()                              >", tab.reverse());
 console.log("[element]  .shift()                                >", tab.shift());
 console.log("[tab]      ---------------------------------------->", tab);
+console.log("[element]  .slice(1)                               >", tab.slice(1));
+console.log("[boolean]  .some(e => e == 1))                     >", tab.some(e => e == 1));
 
