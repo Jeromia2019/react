@@ -34,4 +34,4 @@ Array.from(val/tableau,{function})  [newTab]    Permet de créer une nouvelle in
 .some(function)                     [boolean]   Teste si au moins un élément du tableau répond au conditions de la fonction fournie.
 .sort({function})                   [thisTab]   Trie les éléments d'un tableau dans l'ordre croissant ou selon une fonction passée en argument.
 .splice(index,nbElem,val)           [value]     Modifie le contenu d'un tableau en retirant des éléments et/ou en ajoutant de nouveaux éléments.
-.toLocaleString({locales, options}) [newStr]    Renvoie une chaîne de caractères qui représente les éléments du tableau.
+.toLocaleString(locales,{options})  [newStr]    Renvoie une chaîne de caractères qui représente les éléments du tableau.

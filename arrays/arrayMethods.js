@@ -128,5 +128,8 @@ console.log("[thisTab]         .sort((a,b) => b - a))------------------>", tab.s
 // output: false
 /************************** .SORT(index,nbElem,val) ****************************************/
 console.log("[value]           .splice(0, 1, 64))---------------------->", tab.splice(1, 1, 64));
-// output: [42]
-console.log("[tab]------------>", tab, "<-------------------------<");
+// output: [0]
+console.log("[tab]------------>", tab, "<------------------------<");
+/************************** .TOLOCALESTRING({locales, options}) ****************************************/
+console.log("[value]           .splice(0, 1, 64))---------------------->", tab.splice(1, 1, 64));
+// output: [0]
