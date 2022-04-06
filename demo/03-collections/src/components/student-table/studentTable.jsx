@@ -43,5 +43,5 @@ const StudentTable = ({students}) => {
             </>
         )
 
-
+// to : App.js
 export default StudentTable;
