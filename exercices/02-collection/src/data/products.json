@@ -1,37 +1,37 @@
 [
     {
         "id": 1,
-        "name": "casserolle",
+        "name": "Casserolle",
         "price": 3,
         "promo": true
     },
     {
         "id": 2,
-        "name": "chaussures",
+        "name": "Chaussures",
         "price": 79.9,
         "promo": false
     },
     {
         "id": 3,
-        "name": "manteau",
+        "name": "Manteau",
         "price": 25,
         "promo": false
     },
     {
         "id": 4,
-        "name": "tasse",
+        "name": "Tasse",
         "price": 1,
         "promo": false
     },
     {
         "id": 5,
-        "name": "bonet",
+        "name": "Bonet",
         "price": 4,
         "promo": true
     },
     {
         "id": 6,
-        "name": "parapluie",
+        "name": "Parapluie",
         "price": 12.5,
         "promo": false
     }

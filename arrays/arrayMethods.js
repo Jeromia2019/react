@@ -126,3 +126,7 @@ console.log("[boolean]         .some(e => e == 1))                     >", tab.s
 /************************** .SORT({function}) ********************************************/
 console.log("[thisTab]         .sort((a,b) => b - a))------------------>", tab.sort((a,b) => b - a));
 // output: false
+/************************** .SORT(index,nbElem,val) ****************************************/
+console.log("[value]           .splice(0, 1, 64))---------------------->", tab.splice(1, 1, 64));
+// output: [42]
+console.log("[tab]------------>", tab, "<-------------------------<");
