@@ -5,7 +5,7 @@ export const Welcome = (props) => {
   const { firstname, lastname, num } = props;
   const res = num + 2;
   return (
-    //Fragment <></>
+    //Englobé dans un fragment <></> ou une <div></div>
     <>
       <h1>{res} Bonjour 
           <span className={style.name /* + ' ' + style.num */}>

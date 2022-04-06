@@ -1,7 +1,9 @@
 .name{
     color: lightcoral;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .age{
     font-style: oblique;
+    font-size: larger;
 }
