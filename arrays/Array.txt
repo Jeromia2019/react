@@ -32,4 +32,5 @@ Array.from(val/tableau,{function})  [newTab]    Permet de créer une nouvelle in
 .shift()                            [element]   Retire le premier élément d'un tableau et renvoye cet élément en modifiant la longeur du tableau.
 .slice(indexStart,{indexEnd})       [element]   Découpe un tableau sur base d' un index de début (jusqu'à la fin) ou/et d'un index de fin {indexEnd}.
 .some(function)                     [boolean]   Teste si au moins un élément du tableau répond au conditions de la fonction fournie.
-.sort()                             [thisTab]   Trie les éléments d'un tableau.
+.sort({function})                   [thisTab]   Trie les éléments d'un tableau dans l'ordre croissant ou selon une fonction passée en argument.
+.splice()

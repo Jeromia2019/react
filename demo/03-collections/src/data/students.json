@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "firstname": "Guillaume",
+    "lastname": "Dutilleux",
+    "result": 5
+  },
+  {
+    "id": 2,
+    "firstname": "Jérôme",
+    "lastname": "De Puyt",
+    "result": 12
+  },
+  {
+    "id": 3,
+    "firstname": "Pierre",
+    "lastname": "Santos",
+    "result": 20
+  },
+  {
+    "id": 4,
+    "firstname": "Morgane",
+    "lastname": "Meganckx",
+    "result": 16
+  },
+  {
+    "id": 5,
+    "firstname": "Hani",
+    "lastname": "Monkey D.",
+    "result": null
+  }
+]
