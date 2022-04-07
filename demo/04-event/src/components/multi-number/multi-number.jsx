@@ -1,24 +1,30 @@
 import {useState} from 'react';
 
-const MultiNumber = ({multiplier}) => {
+const CalculateNb = ({number}) => {
 
     const [nb, setNb] = useState(1);
 
-    const handleMulti = () => {
-        setNb(x => x * multiplier)
+    const multiNb = () => {
+        setNb(x => x * number)
+    }
+
+    const divideNb = () => {
+        setNb(x => x / number)
     }
 
     return (
         <>
-        <h3>Miultpiplication par {multiplier}</h3>
+        <h3>Multpiplication par {number}</h3>
+        <button onClick={multiNb}>x {number}</button>
+        <h3>Division par {number}</h3>
+        <button onClick={divideNb}>/ {number}</button>
         <p>Valeur : {nb}</p>
-        <button onClick={handleMulti}>x {multiplier}</button>
         </>
     )
 }
 
-MultiNumber.defaultProps = {
-    multiplier: 1
+CalculateNb.defaultProps = {
+    number: 1
 }
 
-export default MultiNumber;
+export default CalculateNb;

@@ -1,5 +1,5 @@
 import DayNight from './components/day-night/day-night';
-import MultiNumber from './components/multi-number/multi-number';
+import CalculateNb from './components/multi-number/multi-number';
 import './App.css';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>Demo - event</h1>
       <DayNight/>
-      <MultiNumber multiplier={2}/>
+      <CalculateNb number={2}/>
     </div>
   );
 }
