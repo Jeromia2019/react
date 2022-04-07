@@ -9,9 +9,10 @@ const FormExo = () => {
 
     const calculate = (e) => {
         e.preventDefault();
-        console.log(operator);
+
         setResult(
-            nb1 * nb2
+            // TODO Faire un switch et finiiii ! 
+            eval(`${nb1} ${operator} ${nb2}`)
         )
     }
 
@@ -28,22 +29,19 @@ const FormExo = () => {
                 >
                 <option 
                 value="+"
-                selected={operator}
+                selected={operator === "+"}
                 >+</option>
                 <option 
                 value="-"
                 selected={operator === "-"}
-                onChange={e => setOperator(e.target.value)}
                 >-</option>
                 <option 
-                value="x"
+                value="*"
                 selected={operator === "x"}
-                onChange={e => setOperator(e.target.value)}
                 >x</option>
                 <option 
                 value="/"
                 selected={operator === "/"}
-                onChange={e => setOperator(e.target.value)}
                 >/</option>
             </select>
             <label htmlFor="nb2">Nb2 : </label>
