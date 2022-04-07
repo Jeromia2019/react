@@ -14,11 +14,10 @@ const CalculateNb = ({number}) => {
 
     return (
         <>
-        <h3>Multpiplication par {number}</h3>
-        <button onClick={multiNb}>x {number}</button>
-        <h3>Division par {number}</h3>
-        <button onClick={divideNb}>/ {number}</button>
+        <h3>Multpiplication et division par {number} (function)</h3>
         <p>Valeur : {nb}</p>
+        <button onClick={multiNb}>x {number}</button><br />
+        <button onClick={divideNb}>÷ {number}</button>
         </>
     )
 }
