@@ -32,7 +32,7 @@ class MultiNbClass extends Component {
         const  {nb} = this.state;
         return (
             <>
-            <h3>Multpiplication par {multiplier} (class)</h3>
+            <h3>Multiplication par {multiplier} (class)</h3>
             <p>Valeur : {nb}</p>
             <button onClick={this.handleMulti}>x {multiplier}</button><br />
             <button onClick={this.reset}>reset</button>

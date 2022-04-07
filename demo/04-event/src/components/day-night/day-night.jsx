@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const DayNight = () => {
 
-    const [day, setDay] = useState(false);
+    const [day, setDay] = useState(true);
 
     const switchDayNight = () => {
         setDay(old => !old);
