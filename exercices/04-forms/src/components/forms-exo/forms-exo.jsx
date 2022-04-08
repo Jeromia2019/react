@@ -10,10 +10,26 @@ const FormExo = () => {
     const calculate = (e) => {
         e.preventDefault();
 
-        setResult(
-            // TODO Faire un switch et finiiii ! 
-            eval(`${nb1} ${operator} ${nb2}`)
-        )
+        switch (operator){
+                case '+' :
+                setResult(parseInt(nb1) + parseInt(nb2))
+                break; 
+                case '-' :
+                setResult(parseInt(nb1) - parseInt(nb2))
+                break; 
+                case '*' :
+                setResult(parseInt(nb1) * parseInt(nb2))
+                break; 
+                case '/' :
+                setResult(parseInt(nb1) / parseInt(nb2))
+                break; 
+                default: setResult(parseInt(nb1) + parseInt(nb2))
+            }
+
+        // ↑ Pareil ↓
+        // setResult(
+            // eval(`${nb1} ${operator} ${nb2}`)
+        // )
     }
 
     return(
@@ -37,7 +53,7 @@ const FormExo = () => {
                 >-</option>
                 <option 
                 value="*"
-                selected={operator === "x"}
+                selected={operator === "*"}
                 >x</option>
                 <option 
                 value="/"
@@ -50,7 +66,7 @@ const FormExo = () => {
                 onChange={e => setNb2(e.target.value)}
             />
 
-            <button onClick={calculate}>Calculer</button>
+            <button onClick={calculate} disabled={!nb1 || !nb2}>Calculer</button>
 
             <input type="text" value={result} id="result" readonly="readonly" />
         </form>
