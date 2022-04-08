@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useRef} from 'react';
 import operatorsEnum from '../../enums/operators-enum'
 
 // le * ici est parce que le regex est vérifié a chaque input donc il serait obligé de taper le .0 et pas fluidement . ...
@@ -10,6 +10,11 @@ const FormExoProf = () => {
         const [nb2, setNb2] = useState('');
         const [operator, setOperator] = useState('+');
         const [result, setResult] = useState('');
+
+            
+        // Pour focus l'élément voulu après le calcul (submit)
+        const inputNb1 = useRef();
+        inputNb1.current.focus()
 
         const inputNumberOnly = (e, setState) => {
             // On récupère value et on permet de taper une , pour un .
@@ -76,10 +81,6 @@ const FormExoProf = () => {
                 default: return "Opération non supportée"
             } 
         })
-    
-        // TODO Pour focus l'élément voulu après le calcul (submit)
-        // const inputNb1 = useRef();
-        // inputNb1.current.focus()
     
     }
     return(
