@@ -18,6 +18,16 @@ const ToDoList = () => {
         setTodos(newTodo);
     }
 
+    const updateTodo = (todoId, newValue) =>{
+        if (!newValue.name || /^\s*$/.test(newValue.name)) {
+            return;
+        } 
+        else if (!newValue.description || /^\s*$/.test(newValue.description)) {
+            return;
+        }
+        setTodos(prev => prev.map(item => item.id === todoId ? newValue : item))
+    }
+
     const removeTodo = (id) => {
         const removeArr = [...todos].filter(todo => todo.id !== id)
 
@@ -41,6 +51,7 @@ const ToDoList = () => {
         todos={todos}
         completeTodo={completeTodo}
         removeTodo={removeTodo}
+        updateTodo={updateTodo}
         />
         </>
     )

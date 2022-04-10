@@ -8,8 +8,10 @@ function ToDoForm(props) {
       LOW: "Basse",
     }
 
-  const [tname, setTname] = useState('');
-  const [tdesc, setTdesc] = useState('');
+  const editProperties = props.edit ? props.edit.value : '';
+
+  const [tname, setTname] = useState(editProperties);
+  const [tdesc, setTdesc] = useState(editProperties);
   const [options, setOptions] = useState('Normal')
 
   const handleSubmit = (e) => {
@@ -32,13 +34,15 @@ function ToDoForm(props) {
           <label htmlFor="name">Nom</label>
           <input type="text" name="name" id="name" 
           value={tname}
-          onChange={e => setTname(e.target.value)}/>
+          onChange={e => setTname(e.target.value)}
+          />
       </div>
       <div className="description">            
           <label htmlFor="description">Description</label>
           <input type="text" name="description" id="description" 
           value={tdesc}
-          onChange={e => setTdesc(e.target.value)}/>
+          onChange={e => setTdesc(e.target.value)}
+          />
       </div>
       <div>
           <label htmlFor="priority">Priorité</label>
