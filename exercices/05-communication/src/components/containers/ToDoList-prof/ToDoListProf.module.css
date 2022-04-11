@@ -1,0 +1,18 @@
+.urgent {
+    color: lightcoral;
+    font-weight: 900;
+}
+
+.task{
+    background: none;
+}
+
+.isComplete{
+    background: repeating-linear-gradient(
+        -30deg,
+        #f3f3f3,
+        #f3f3f3 30px,
+        #c3c3c3 30px,
+        #c3c3c3 60px
+      );
+}

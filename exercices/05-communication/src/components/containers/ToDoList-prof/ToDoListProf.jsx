@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ToDoForm from './ToDoForm';
 // npm i nanoid : Permet de générer des id aléatoires uniques
 import {nanoid} from 'nanoid'
+import ToDoTask from './ToDoTask';
 
 function ToDoListProf() {
 
@@ -17,12 +18,24 @@ function ToDoListProf() {
     setTodos(oldToDo => [newToDo, ...oldToDo])
   }
 
+  const handleDeletedTask = (id) =>{
+    setTodos(tasks => tasks.filter(task => task.id !== id))
+  }
+  
+  const handleCompletedTask = (id) =>{
+    setTodos(tasks => tasks.map(task => task.id !== id ? task : {...task, isComplete: true}))
+  }
+
   return (
     <>
         <h2>Ajouter une tâche</h2>
         <ToDoForm buttonSubmit="ajouter" onValid={handleNewToDo}/>
         <h2>Liste des tâches</h2>
-        <pre>{JSON.stringify(todos, null, 4)}</pre>
+        {/* <pre>{JSON.stringify(todos, null, 2)}</pre> */}
+        <ToDoTask elements={todos}
+        onDeleteTask={handleDeletedTask}
+        onCompleteTask={handleCompletedTask}
+        />
     </>
   )
 }
