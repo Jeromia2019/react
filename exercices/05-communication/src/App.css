@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/* MON CSS */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.App > main {
+  flex-grow: 1;
 }

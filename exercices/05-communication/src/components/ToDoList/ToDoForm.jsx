@@ -21,7 +21,9 @@ function ToDoForm(props) {
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       name: tname,
-      description: tdesc
+      description: tdesc,
+      priority: options,
+      complete: false
     })
 
     setTname('');

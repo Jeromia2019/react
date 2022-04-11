@@ -18,15 +18,15 @@ const ToDoList = () => {
         setTodos(newTodo);
     }
 
-    const updateTodo = (todoId, newValue) =>{
-        if (!newValue.name || /^\s*$/.test(newValue.name)) {
-            return;
-        } 
-        else if (!newValue.description || /^\s*$/.test(newValue.description)) {
-            return;
-        }
-        setTodos(prev => prev.map(item => item.id === todoId ? newValue : item))
-    }
+    // const updateTodo = (todoId, newValue) =>{
+    //     if (!newValue.name || /^\s*$/.test(newValue.name)) {
+    //         return;
+    //     } 
+    //     else if (!newValue.description || /^\s*$/.test(newValue.description)) {
+    //         return;
+    //     }
+    //     setTodos(prev => prev.map(item => item.id === todoId ? newValue : item))
+    // }
 
     const removeTodo = (id) => {
         const removeArr = [...todos].filter(todo => todo.id !== id)
@@ -34,11 +34,12 @@ const ToDoList = () => {
         setTodos(removeArr)
     }
 
-    const completeTodo = (id) => {
+    const completeTodo = (complete) => {
         let updatedTodo = todos.map(todo => {
-            if (todo.id === id) {
-                todo.isComplete = !todo.isComplete;
-            }
+            // if (todo.id === id) {
+            //     todo.complete = !todo.complete;
+            // }
+            complete = true;
             return todo;
         })
         setTodos(updatedTodo)
@@ -51,7 +52,7 @@ const ToDoList = () => {
         todos={todos}
         completeTodo={completeTodo}
         removeTodo={removeTodo}
-        updateTodo={updateTodo}
+        // updateTodo={updateTodo}
         />
         </>
     )
