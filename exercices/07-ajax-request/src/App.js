@@ -1,11 +1,11 @@
 
 import './App.css';
-import DemoEventHook from './components/DemoEventHook';
+import DemoAgify from './components/Demo/DemoAgify';
 
 function App() {
   return (
     <div className="App">
-      <DemoEventHook />
+      <DemoAgify/>
     </div>
   );
 }
