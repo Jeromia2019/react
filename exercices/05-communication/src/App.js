@@ -1,9 +1,9 @@
 
 import './App.css';
-import MainHeader from './components/containers/Main/MainHeader';
-import MainFooter from './components/containers/Main/MainFooter';
+import MainHeader from './containers/Main/MainHeader';
+import MainFooter from './containers/Main/MainFooter';
 // import ToDoList from './components/ToDoList/ToDoList';
-import ToDoListProf from './components/./containers/ToDoList-prof/ToDoListProf'
+import ToDoListProf from './containers/ToDoList-prof/ToDoListProf'
 
 function App() {
   return (
