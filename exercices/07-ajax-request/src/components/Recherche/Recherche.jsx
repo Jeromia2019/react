@@ -24,9 +24,7 @@ function Recherche() {
       <div>
         <button type="submit">Rechercher...</button>
       </div>
-      {data && (
         <Meteo region={data} />
-      )}
     </form>
   )
 }

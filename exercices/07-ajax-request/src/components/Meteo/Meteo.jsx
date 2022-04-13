@@ -7,6 +7,8 @@ function Meteo({region}) {
   const [data, setData] = useState();
   const [error, setError] = useState();
 
+  const [favoris, setFavoris] = useState([]);
+
   useEffect(() => {
 
     setData(null)
@@ -29,6 +31,19 @@ function Meteo({region}) {
     
   }, [region])
 
+  const handleSave = (e) => {
+    e.preventDefault();
+
+    const newList = {
+      ...data,
+      region: data?.region,
+      weather: data?.weather
+    }
+
+    setFavoris(old => old.region !== data.region && newList)
+    
+  }
+
   return (
     <div>
       {loading ? (
@@ -38,7 +53,9 @@ function Meteo({region}) {
     ) : data && (
       <>
         <p>La région : {data.region} - la température : {data.weather}</p>
+        <button onClick={handleSave}>Sauvegarder</button>
         <p>Je suis blazé...</p>
+        <pre>{JSON.stringify(favoris, null, 2)}</pre>
       </>
     )}
     </div>
