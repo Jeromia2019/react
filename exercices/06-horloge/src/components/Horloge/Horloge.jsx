@@ -10,15 +10,15 @@ function Horloge() {
   }
 
   // J'ai pas compris Aurélien a l'aide !
-  // setInterval(UpdateTime, 200);
+  setInterval(UpdateTime, 200);
   
-  useEffect(() => {
+  // useEffect(() => {
     
-    setInterval(UpdateTime, 200);
+  //   setInterval(UpdateTime, 200);
 
-    return () => {
-    }
-  }, []);
+  //   return () => {
+  //   }
+  // }, []);
 
   return (
     <p>{time}</p>

@@ -16,6 +16,7 @@ function DemoEventHook() {
 
   return (
     <div>
+      <h1>Compteur : </h1>
         <button onClick={() => setCount(nb => nb + 1)}>
             Compteur : {count}
         </button>
