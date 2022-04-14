@@ -1,0 +1,27 @@
+[
+    {
+        "client_id": "",
+        "client_nom": "",
+        "client_adresse": {
+            "street": "",
+            "locality": "",
+            "number": ""
+            },
+        "commandes": [
+            {
+                "id": "",
+                "date": "",
+                "products": [
+                    {
+                        "product_number": "",
+                        "qCom": ""
+                    },
+                    {
+                        "product_number": "",
+                        "qCom": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
