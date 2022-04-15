@@ -25,11 +25,11 @@ stagiaireSchema.virtual("fullName").get(() => `${this.nom} ${this.prenom}`);
 const Stagiaire = model("stagiaires", stagiaireSchema);
 
 Stagiaire.findOne({ nom: "Jeromia" }).exec().then(items => {
-    console.log(items.nom);
+    console.log(items);
 }); // Jeromia
 
 const clientsSchema = new Schema({
-    "NOM": { type: String, required: true },
+    "NOM": { type: Schema.Types.Mixed, required: true },
     "LOCALITE": String,
 });
 
