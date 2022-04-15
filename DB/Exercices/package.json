@@ -1,20 +1,20 @@
 {
-  "name": "db",
+  "name": "exercices",
   "version": "1.0.0",
-  "description": "",
-  "main": "clients.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node main.js",
-    "dev": "nodemon main.js",
+    "start": "nodemon main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "mongoose": "^6.2.11"
-  },
+  "description": "",
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.3.0"
   }
 }
