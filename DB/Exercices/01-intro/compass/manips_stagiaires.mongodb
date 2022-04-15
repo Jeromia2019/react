@@ -9,5 +9,10 @@ db.stagiaires.aggregate([
       foreignField: 'nom',
       as: 'fullSection'
     }
+  },{
+    $project: {
+      nom: 1,
+      'fullSection.description': true
+    }
   }
 ])
