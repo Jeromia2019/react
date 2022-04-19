@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import style from '../youtube/styles/youtube.module.css'
 import Searchbar from "../searchbars/Searchbar";
 import YoutubeApi from "../apis/youtube-api";
 import VideoList from "./videos/VideoList";
@@ -27,21 +28,17 @@ function Youtube() {
 
 
   return (
-    <div className="ui container" style={{ marginTop: "1em" }}>
+    <div className={style}>
       <Searchbar handleFormSubmit={handleSubmit} />
-      <div className="ui grid">
-        <div className="ui row">
-          <div className="eleven wide column">
+          <div className={style}>
             <VideoDetail video={selectedVideo} />
           </div>
-          <div className="five wide column">
+          <div className={style}>
             <VideoList
               handleVideoSelect={handleVideoSelect}
               videos={videos}
             />
           </div>
-        </div>
-      </div>
     </div>
   );
 }

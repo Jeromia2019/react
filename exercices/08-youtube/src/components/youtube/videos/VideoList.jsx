@@ -1,7 +1,9 @@
 import React from "react";
 import VideoItem from "./VideoItem";
+import style from "../styles/youtube.module.css";
 
 function VideoList({ videos, handleVideoSelect }) {
+  
   const renderedVideos = videos.map((video) => {
     return (
       <VideoItem
@@ -12,7 +14,7 @@ function VideoList({ videos, handleVideoSelect }) {
     );
   });
 
-  return <div className="ui relaxed divided list">{renderedVideos}</div>;
+  return <div className={style}>{renderedVideos}</div>;
 }
 
 export default VideoList;
