@@ -1,6 +1,6 @@
 
 import './App.css';
-import MeteoCorrection from './components/correction/MeteoCorrection';
+import MeteoCorrection from './components/correction/meteo/MeteoCorrection';
 import DemoAgify from './components/Demo/DemoAgify';
 import Recherche from './components/Recherche/Recherche';
 import MainFooter from './containers/main-footer/main-footer';
