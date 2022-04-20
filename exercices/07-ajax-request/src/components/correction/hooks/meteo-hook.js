@@ -8,6 +8,11 @@ export const useWeatherAjax = (city) => {
     const [isLoading, setLoading] = useState(true)
     const [onError, setError] = useState(false)
     const [data, setData] = useState(null)
+    const [lastCall, setLastCall] = useState(new Date())
+
+    const reload = () => {
+        setLastCall(new Date())
+    }
 
     useEffect(() => {
         setLoading(true)
@@ -25,7 +30,7 @@ export const useWeatherAjax = (city) => {
         })
         .then((data) => {
             setData({
-                id: 21471,
+                id: data.id,
                 city: data.name,
                 country: data.sys.country,
                 weather: data.weather[0].description,
@@ -36,13 +41,14 @@ export const useWeatherAjax = (city) => {
         })
         .catch((error) => {
             setError(true)
+            console.log(error);
         })
         .finally(() => {
             setLoading(false)
         })
-    }, [city])
+    }, [city, lastCall])
 
-    return [data, onError, isLoading]
+    return [data, onError, isLoading, reload]
 
 }
 
