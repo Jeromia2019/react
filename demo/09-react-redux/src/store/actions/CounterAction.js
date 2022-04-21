@@ -4,7 +4,7 @@ export const COUNTER_DECREMENT = 'counter/decrement';
 export const COUNTER_RESET = 'counter/reset';
 
 export const counterIncrement = (counterValue) => {
-
+    
     return {
         type: COUNTER_INCREMENT,
         payload: counterValue
@@ -13,11 +13,13 @@ export const counterIncrement = (counterValue) => {
 
 // Fonction lambda pour le fun
 export const counterDecrement = (counterValue) => ({
-        type: COUNTER_DECREMENT,
-        payload: counterValue
+    type: COUNTER_DECREMENT,
+    payload: counterValue
 });
 
 // Fuuuuuuun
 export const counterReset = () => ({
-        type: COUNTER_RESET
+    type: COUNTER_RESET
 });
+
+// to : CounterReducer.js

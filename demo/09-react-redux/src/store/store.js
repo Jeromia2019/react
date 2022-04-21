@@ -7,4 +7,5 @@ const reducer = combineReducers({
 
 export const store = createStore(reducer)
 
+// to : index.js
 export default store;
