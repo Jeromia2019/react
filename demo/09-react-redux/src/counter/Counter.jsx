@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import ButtonCounter from '../buttons/ButtonCounter';
 
-function CounterAction({step}) {
+function Counter({step}) {
   return (
     <div>
         <ButtonCounter step={step} flow={'up'} />
@@ -11,12 +11,12 @@ function CounterAction({step}) {
   )
 }
 
-CounterAction.propTypes = {
+Counter.propTypes = {
     step: propTypes.number,
   };
   
-CounterAction.defaultProps = {
+Counter.defaultProps = {
     step: 1,
   };
 
-export default CounterAction
+export default Counter
