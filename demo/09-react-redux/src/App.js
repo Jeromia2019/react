@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import MainHeader from './containers/main-header/main-header';
+import MainFooter from './containers/main-footer/main-footer';
+import CounterDisplay from './counter/CounterDisplay';
+import CounterAction from './counter/CounterAction';
+import CounterReset from './counter/CounterReset';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainHeader />
+      <main>
+      <CounterDisplay />
+      <CounterAction step={3} />
+      <CounterReset />
+      </main>
+      <MainFooter />
     </div>
   );
 }
