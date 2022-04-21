@@ -1,5 +1,6 @@
-import React from 'react'
-import {useSelector} from 'react-redux'
+import React from 'react';
+// useSelector : Permet d'interagir directement avec la valeur du state
+import { useSelector } from 'react-redux'
 
 function CounterDisplay() {
 

@@ -1,8 +1,9 @@
 import React from 'react';
 
-function ButtonReset() {
+function ButtonReset({onClick, disabled}) {
+
   return (
-    <button>Réinitialiser</button>
+    <button onClick={onClick} disabled={disabled}>Réinitialiser</button>
   )
 }
 

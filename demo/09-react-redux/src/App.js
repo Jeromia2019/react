@@ -12,7 +12,7 @@ function App() {
       <main>
       <CounterDisplay />
       <Counter />
-      <Counter step={3} />
+      <Counter step={5} />
       <CounterReset />
       </main>
       <MainFooter />
