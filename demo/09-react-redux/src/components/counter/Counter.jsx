@@ -1,7 +1,7 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import ButtonCounter from '../buttons/ButtonCounter';
-import { counterIncrement, counterDecrement } from '../store/actions/CounterAction';
+import { counterIncrement, counterDecrement } from '../../store/actions/counterAction';
 import { useDispatch } from 'react-redux';
 
 function Counter({step}) {
