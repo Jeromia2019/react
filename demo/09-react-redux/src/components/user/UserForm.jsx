@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import { useDispatch } from 'react-redux';
+import { userAdd } from '../../store/actions/userAction';
 
 const userSchema = yup.object({
     firstname: yup.string().trim().required().min(2),
@@ -20,7 +21,8 @@ function UserForm() {
   })
 
   const onSubmit = (data) => {
-    dispatch({type: 'user/add', payload: data})
+    dispatch(userAdd(data))
+    // dispatch({type: 'user/add', payload: data})
     setFocus('firstname')
     // isValid ne marchera jamais puisqu'on reset les données (le isValid ne prends en compte que les données reçues, pas la validité de celles-ci (vu que si elles passent, elles sont valides))
     reset();
@@ -36,8 +38,8 @@ function UserForm() {
         {...register('lastname')}
         placeholder='Nom'
         />
-        <button type="submit">Envoyer</button>
-        <div>{Object.keys(errors).length !== 0 && <span>Erreur !</span>}</div>
+        <button type="submit">Ajouter</button>
+        <div>{Object.keys(errors).length !== 0 && <span>Veuillez renseigner les deux champs !</span>}</div>
         {/* <div>{(errors.firstname || errors.lastname) && <span>Erreur !</span>}</div> */}
         {/* plus précis mais contraignant si on doit renseigner chaque champs de errors*/}
     </form>

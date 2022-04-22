@@ -7,7 +7,10 @@ const reducer = combineReducers({
     user: userReducer
 })
 
-export const store = createStore(reducer)
+const devTools = (process.env.NODE_ENV === "development") ? window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(): undefined
+
+// export const store = createStore(reducer)
+export const store = createStore(reducer, devTools )
 
 // to : index.js
 export default store;

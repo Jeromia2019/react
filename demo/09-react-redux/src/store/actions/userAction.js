@@ -10,7 +10,8 @@ export const userAdd = ({firstname, lastname}) => {
     payload: {
       id: nanoid(),
       firstname, 
-      lastname},
+      lastname
+    },
   };
 };
 

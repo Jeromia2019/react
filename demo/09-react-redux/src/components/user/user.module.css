@@ -1,0 +1,16 @@
+.listItem{
+    position: relative;
+    list-style: none;
+}
+
+.listItem>span {
+    display: none;
+    position: absolute;
+    top: 0;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.listItem:hover>span {
+    display: inline;
+}
