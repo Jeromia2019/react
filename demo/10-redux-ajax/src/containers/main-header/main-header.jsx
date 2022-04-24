@@ -1,6 +1,6 @@
 const MainHeader = () => (
   <header>
-    <h1>Exo 09 - Redux ♥</h1>
+    <h1>Exo 10 - Redux-Ajax ♥</h1>
   </header>
 );
 
