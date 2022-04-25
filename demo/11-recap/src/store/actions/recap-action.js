@@ -15,3 +15,5 @@ const recapAction = createAction('recap/action', (step = 1) => ({
 }))
 
 console.log(recapAction.type);
+
+export default recapAction;
