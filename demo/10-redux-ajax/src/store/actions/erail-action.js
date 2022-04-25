@@ -30,17 +30,20 @@ export const fetchLiveboard = (station) => {
         dispatch(irailLoading());
 
         // Requete ajax avec axios
-        axios.get(URL, {
+        axios
+        .get(URL, {
             params: {
                 station,
                 format: 'json',
                 lang: 'fr'
             }
-        }).then(response => {
+        })
+        .then(response => {
             // Envoi un action "result"
             dispatch(irailResult(response.data));
             console.log(`succes request ! %c${response.data.station}`, 'color: cyan');
-        }).catch(e => {
+        })
+        .catch(e => {
             // Envoi un action "error"
             dispatch(irailError(e.errorMessage));
         });

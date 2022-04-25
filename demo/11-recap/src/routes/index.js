@@ -1,8 +1,9 @@
 import About from '../pages/about/About';
-import DemoRouter, { DemoRouterA, DemoRouterB, DemoRouterInit } from '../pages/demo-router/DemoRouter';
+import DemoRouter, { DemoQuery, DemoRouterA, DemoRouterB, DemoRouterInit, DemoRouterNotFound, DemoRouterParam } from '../pages/demo-router/DemoRouter';
 import Error404 from '../pages/errors/Error404';
 import Home from '../pages/home/Home';
 
+// to : App.js
 export const appRoute = [
         { path: '', element: <Home /> },
         { path: 'about', element: <About /> },
@@ -21,6 +22,18 @@ export const appRoute = [
                         {
                                 path:'choiceb',
                                 element: <DemoRouterB />
+                        },
+                        {
+                                path:'param/:id',
+                                element: <DemoRouterParam />
+                        },
+                        {
+                                path:'query',
+                                element: <DemoQuery />
+                        },
+                        {
+                                path:'*',
+                                element: <DemoRouterNotFound />
                         },
                 ] 
         },

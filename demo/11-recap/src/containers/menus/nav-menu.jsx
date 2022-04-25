@@ -8,6 +8,7 @@ import {
   ListItemIcon,
   ListItemText,
 } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 const navLinks = [
   {
@@ -41,7 +42,11 @@ function NavMenu({onMenuClick}) {
 
 function NavMenuItem({ name, icon, to }) {
   return (
-    <ListItemButton>
+    // Pour que nos liens fonctionnent avec le routage
+    <ListItemButton
+    component={NavLink}
+    to={to}
+    >
       <ListItemIcon>{icon}</ListItemIcon>
       <ListItemText primary={name} />
     </ListItemButton>
