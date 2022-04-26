@@ -28,7 +28,7 @@ function CitySearch({onSearch}) {
   console.log(errors?.city);
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={ handleSubmit(onSubmit) }>
       <label htmlFor='city'>Nom d'une ville : </label>
       <input id='city' defaultValue='' {...register('city')} />
       {errors?.city && (

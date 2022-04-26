@@ -23,6 +23,7 @@ const recapReducer = createReducer(initialState, (builder) =>  {
             recap: state.recap + action.payload
         }
     })
+    // pas obligatoire : se met automatiquement
     .addDefaultCase();
 })
 
