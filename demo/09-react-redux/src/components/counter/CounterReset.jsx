@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonReset from '../buttons/ButtonReset';
-import { counterReset  } from '../../store/actions/counterAction';
+import { counterReset  } from '../../store/actions/CounterAction'
 import { useDispatch, useSelector } from 'react-redux';
 
 function CounterReset() {

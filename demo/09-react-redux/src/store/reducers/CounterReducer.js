@@ -1,4 +1,4 @@
-import {COUNTER_INCREMENT, COUNTER_DECREMENT, COUNTER_RESET} from '../actions/counterAction'
+import {COUNTER_INCREMENT, COUNTER_DECREMENT, COUNTER_RESET} from '../../store/actions/CounterAction'
 
 const initialState = {
     count: 0,
